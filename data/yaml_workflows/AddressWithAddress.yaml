@@ -1,0 +1,38 @@
+Name: DYNAMIC_NAME_PLACEHOLDER
+Trigger:
+  TriggerSourceContract: 0x4b0bf40d9e037afb23a500ba0ff4b558015d711f
+  TriggerChainID: 80002
+  TriggerEventName: Profile(string)
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: W3siYW5vbnltb3VzIjpmYWxzZSwiaW5wdXRzIjpbeyJpbmRleGVkIjpmYWxzZSwiaW50ZXJuYWxUeXBlIjoic3RyaW5nIiwibmFtZSI6Im5hbWUiLCJ0eXBlIjoic3RyaW5nIn1dLCJuYW1lIjoiUHJvZmlsZSIsInR5cGUiOiJldmVudCJ9LHsiaW5wdXRzIjpbXSwibmFtZSI6Im5hbWUiLCJvdXRwdXRzIjpbeyJpbnRlcm5hbFR5cGUiOiJzdHJpbmciLCJuYW1lIjoiIiwidHlwZSI6InN0cmluZyJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyIsInR5cGUiOiJmdW5jdGlvbiJ9LHsiaW5wdXRzIjpbeyJpbnRlcm5hbFR5cGUiOiJzdHJpbmciLCJuYW1lIjoiX25hbWUiLCJ0eXBlIjoic3RyaW5nIn1dLCJuYW1lIjoicHJvZmlsZSIsIm91dHB1dHMiOltdLCJzdGF0ZU11dGFiaWxpdHkiOiJub25wYXlhYmxlIiwidHlwZSI6ImZ1bmN0aW9uIn1d
+  TriggerPrice: NA
+  RecurringSourceContract: 0x4b0bf40d9e037afb23a500ba0ff4b558015d711f
+  RecurringChainID: 80002
+  RecurringEventName: NumbersAdded(a int, b int, sum int)
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: NA
+  RepeatEvery: address_tracking
+  ExecuteAfter: address_tracking
+  ExpiresIn: DYNAMIC_TIMESTAMP_PLACEHOLDER
+  Meta: NA
+  ActionStatusNotificationPOSTURL: 
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: APICAll
+    Type: post
+    APIEndpoint: https://api.telegram.org/bot8225433835:AAGaE4Sv1synGCEBeKT4bop4BI-vRCWaHko/sendmessage
+    APIPayload:
+      chat_id: '7118280412'
+      text: Add with add
+    TargetContract: NA
+    TargetFunction: NA
+    TargetParams: 
+    ChainID: NA
+    EncodedABI: NA
+    Bytecode: NA
+    EncodedGoContract: NA
+    Metadata: NA
+    RetriesUntilSuccess: 5
+Execution:
+  Mode: parallel

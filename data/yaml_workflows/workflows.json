@@ -1,0 +1,18 @@
+[
+  {
+    "templateName": "nftPointsWorkflow",
+    "name": "management-report-workflow-1",
+    "expiresInDays": 2
+  },
+  {
+    "templateName": "nftPointsWorkflow",
+    "name": "management-report-workflow-2",
+    "expiresInDays": 3
+  },
+  {
+    "templateName": "nftPointsWorkflow",
+    "//note": "You can also provide a full YAML string below as 'yaml' to use a custom workflow definition",
+    "name": "custom-yaml-workflow",
+    "yaml": "Actions:\n  - Name: ping\n    Type: post\nExecution:\n  Mode: parallel\nName: custom-yaml-workflow\nTrigger:\n  ExpiresIn: 0"
+  }
+]

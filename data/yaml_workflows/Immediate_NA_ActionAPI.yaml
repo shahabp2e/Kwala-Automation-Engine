@@ -1,0 +1,37 @@
+Name: DYNAMIC_NAME_PLACEHOLDER
+Trigger:
+  TriggerSourceContract: NA
+  TriggerChainID: NA
+  TriggerEventName: NA
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: NA
+  TriggerPrice: NA
+  RecurringSourceContract: NA
+  RecurringChainID: NA
+  RecurringEventName: NA
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: NA
+  RepeatEvery: NA
+  ExecuteAfter: immediate
+  ExpiresIn: DYNAMIC_TIMESTAMP_PLACEHOLDER
+  Meta: NA
+  ActionStatusNotificationPOSTURL: https://webhook.site/#!/view/9c1469e5-2244-4101-91ae-1602b7eb73ef/0c47be64-e23b-4d4b-92e2-d98f591c46f0/1
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: API_Call_Once
+    Type: post
+    APIEndpoint: https://api.telegram.org/bot8290848596:AAHll2dz1Me9CET3ztEwJm2uUaQQSMLNpUE/sendMessage
+    APIPayload:
+      chat_id: '1238754794'
+      text: Immediate With NA Testing
+    TargetContract: NA
+    TargetFunction: NA
+    TargetParams: 
+    ChainID: NA
+    EncodedABI: NA
+    Bytecode: NA
+    Metadata: NA
+    RetriesUntilSuccess: 3
+Execution:
+  Mode: parallel

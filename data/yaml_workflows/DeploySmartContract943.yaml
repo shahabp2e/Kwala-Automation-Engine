@@ -1,0 +1,37 @@
+Name: DYNAMIC_NAME_PLACEHOLDER
+Trigger:
+  TriggerSourceContract: NA
+  TriggerChainID: 80002
+  TriggerEventName: NA
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: NA
+  TriggerPrice: NA
+  RecurringSourceContract: NA
+  RecurringChainID: NA
+  RecurringEventName: NA
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: NA
+  RepeatEvery: NA
+  ExecuteAfter: immediate
+  ExpiresIn: DYNAMIC_TIMESTAMP_PLACEHOLDER
+  Meta: NA
+  ActionStatusNotificationPOSTURL: https://webhook.site/#!/view/9c1469e5-2244-4101-91ae-1602b7eb73ef/0c47be64-e23b-4d4b-92e2-d98f591c46f0/1
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: CallingSmartContract
+    Type: call
+    SmartWallet: DEFAULT_SMART_WALLET
+    APIEndpoint: NA
+    APIPayload:
+      Message: NA
+    TargetContract: 0x5EE16Ac7BEBde8F38C99DbEFBBEA4fC5653fC34C
+    TargetFunction: function performSlide()
+    TargetParams:
+    ChainID: 80002
+    EncodedABI: NA
+    Bytecode: NA
+    Metadata: NA
+    RetriesUntilSuccess: 3
+Execution:
+  Mode: parallel

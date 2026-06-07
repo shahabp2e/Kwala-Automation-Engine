@@ -1,0 +1,39 @@
+Name: DYNAMIC_NAME_PLACEHOLDER
+Trigger:
+  TriggerSourceContract: NA
+  TriggerChainID: 80002
+  TriggerEventName: NA
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: NA
+  TriggerPrice: NA
+  RecurringSourceContract: 0xD31a59c85aE9D8edEFeC411D448f90841571b89c
+  RecurringChainID: 1
+  RecurringEventName: NA
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: 86
+  RepeatEvery: oracle_price
+  ExecuteAfter: BL38810999
+  ExpiresIn: DYNAMIC_TIMESTAMP_PLACEHOLDER
+  Meta: NA
+  ActionStatusNotificationPOSTURL: NA
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: API_CALL
+    Type: post
+    SmartWallet: DEFAULT_SMART_WALLET
+    APIEndpoint: https://api.telegram.org/bot8470789989:AAGakdfUOTak81UpR90j8oayHCxjTyzzi28/sendMessage
+    APIPayload:
+      chat_id: '7118280332'
+      text: Hello Nitin! This is a test from KwalaHelperTestBot, Price updated for SHIBU
+    TargetContract: NA
+    TargetFunction: NA
+    TargetParams: NA
+    ChainID: NA
+    EncodedABI: NA
+    Bytecode: NA
+    EncodedGoContract: NA
+    Metadata: NA
+    RetriesUntilSuccess: 5
+Execution:
+  Mode: parallel

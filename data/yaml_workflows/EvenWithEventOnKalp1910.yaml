@@ -1,0 +1,39 @@
+Name: DYNAMIC_NAME_PLACEHOLDER
+Trigger:
+  TriggerSourceContract: 0xc92ee53e7Ab47044da582d4520680F6a920Eb1Aa
+  TriggerChainID: 80002
+  TriggerEventName: Set1(uint256)
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: W3siYW5vbnltb3VzIjpmYWxzZSwiaW5wdXRzIjpbeyJpbmRleGVkIjpmYWxzZSwiaW50ZXJuYWxUeXBlIjoidWludDI1NiIsIm5hbWUiOiIiLCJ0eXBlIjoidWludDI1NiJ9XSwibmFtZSI6IlNldDEiLCJ0eXBlIjoiZXZlbnQifSx7ImFub255bW91cyI6ZmFsc2UsImlucHV0cyI6W3siaW5kZXhlZCI6ZmFsc2UsImludGVybmFsVHlwZSI6InVpbnQyNTYiLCJuYW1lIjoiIiwidHlwZSI6InVpbnQyNTYifV0sIm5hbWUiOiJTZXQyIiwidHlwZSI6ImV2ZW50In0seyJpbnB1dHMiOlt7ImludGVybmFsVHlwZSI6InVpbnQyNTYiLCJuYW1lIjoiX3giLCJ0eXBlIjoidWludDI1NiJ9XSwibmFtZSI6InNldDEiLCJvdXRwdXRzIjpbXSwic3RhdGVNdXRhYmlsaXR5Ijoibm9ucGF5YWJsZSIsInR5cGUiOiJmdW5jdGlvbiJ9LHsiaW5wdXRzIjpbeyJpbnRlcm5hbFR5cGUiOiJ1aW50MjU2IiwibmFtZSI6Il94IiwidHlwZSI6InVpbnQyNTYifV0sIm5hbWUiOiJzZXQyIiwib3V0cHV0cyI6W10sInN0YXRlTXV0YWJpbGl0eSI6Im5vbnBheWFibGUiLCJ0eXBlIjoiZnVuY3Rpb24ifV0=
+  TriggerPrice: NA
+  RecurringSourceContract: 0xc92ee53e7Ab47044da582d4520680F6a920Eb1Aa
+  RecurringChainID: 80002
+  RecurringEventName: NumbersAdded(a int, b int, sum int)
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: NA
+  RepeatEvery: address_tracking
+  ExecuteAfter: event
+  ExpiresIn: DYNAMIC_TIMESTAMP_PLACEHOLDER
+  Meta: NA
+  ActionStatusNotificationPOSTURL: NA
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: testCall
+    Type: post
+    SmartWallet: NA
+    APIEndpoint: https://api.telegram.org/bot8470789989:AAGakdfUOTak81UpR90j8oayHCxjTyzzi28/sendMessage
+    APIPayload:
+      chat_id: '7118280412'
+      text: Hello Nitin! This is a test from KwalaHelperTestBot. Address tracking
+    TargetContract: NA
+    TargetFunction: NA
+    TargetParams: NA
+    ChainID: NA
+    EncodedABI: NA
+    Bytecode: NA
+    EncodedGoContract: NA
+    Metadata: NA
+    RetriesUntilSuccess: 5
+Execution:
+  Mode: parallel
