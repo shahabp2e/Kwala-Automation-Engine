@@ -1,6 +1,4 @@
-# Kwala Automation Deployer Center — JavaScript Edition
-
-Full JavaScript (no TypeScript) version of the Kwala Automation Deployer Center.
+# Kwala Automation Deployer Center —
 
 ## Structure
 
